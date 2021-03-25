@@ -13,3 +13,48 @@
   align-items: center;
   justify-content: center;  
 }
+
+button {
+  color: white;
+  background-color:limegreen;
+  border-radius: .25rem;
+  font-size: 1rem;
+  padding: .375rem .75rem;
+  border: 1px solid transparent;
+  vertical-align: middle;
+  text-align: center;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+#champs_newsletter>div>span {
+  color: white;
+  padding: 5px;
+}
+
+.menu {
+  display: inline-block;
+}
+
+.menu>ul>li {
+  display: inline-block
+} 
+
+
+
+/* CONTENU */
+
+#contenu>h1 {
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: normal;
+  font-size: 50px;
+}
+#contenu>h1::after {
+  content: '';
+  display: block;
+  border-bottom: purple 1px solid;
+  text-align: center;
+  padding: 40px;
+  transform: scaleX(0.03);
+}
