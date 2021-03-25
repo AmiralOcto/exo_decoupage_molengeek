@@ -53,36 +53,44 @@ button {
 /* NavBar */
 
 nav {
-  height: 100px;
-}
-nav>div:first-of-type {
-  border-right: lightgray 2px solid;
+  height: 100px;  border-bottom: lightgray 1px solid;
 }
 
 nav>div>img {
   position: fixed;
-  left: 0px;
+  left: -10px;
   top: 0px;
   transform: scale(0.4);
+  padding-right: 400px;
+  border-right: lightgray 2px solid;
 }
 
 .menu {
-  display: inline-block;
+  display: flex;
   justify-content: center;
+
 }
 
 .menu>ul>li {
   display: inline-block;
-  text-align: center;
+  padding: 10px;
+  
 } 
 
-nav {
-  border-bottom: lightgray 1px solid;
+.menu>ul>li:last-of-type {
+  display: inline-block;
+  justify-content: flex-end;
 }
 
 
 
+
 /* CONTENU */
+
+#contenu {
+  padding-left: 300px;
+  padding-right: 300px;
+}
 
 #contenu>h1 {
   text-align: center;
@@ -102,11 +110,38 @@ nav {
   padding-top: 15px;
 }
 
+#contenu>ul {
+  list-style: none
+}
+
+#contenu>ul>li::before {
+  content: "• "; 
+  color: purple;
+}
+
+#contenu>h2 {
+  font-weight: normal;
+  font-size: 50px;
+}
 /* FOOTER */
 
 footer {
-  background-color: darkslategray;
+  background-color: #212529;
   position: fixed;
   bottom: 0px;
   width: 100%;
+  text-align: center;
+}
+
+#section>div {
+  display: inline-block;
+  justify-content: space-between;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
+  color: white;
+}
+
+footer>p {
+  color: rgb(54, 54, 54);
 }
